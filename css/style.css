@@ -9,26 +9,36 @@
     z-index: 1;
 }
 .ship {
-	width: 350px;
-	height: 350px;
-	position: absolute;
-	animation: rotating 30s infinite linear;
+	width: 777px;
+	height: 700px;
+	animation-direction:normal;
+	animation: rotating 30s infinite ease-in;
 }
 .astronaut {
     width: 200px;
-	position: absolute;
-	animation: reaching 8s linear infinite alternate;
+	height: 200px;
+	
+	transform: translate(-50%, -50%);
+	left: 30%;
+ 	top: 60%;
+	animation: reaching 25s infinite ease-in;
+	animation-direction:alternate;
+
+}
+.astro1 {
+    
 }
 
 @keyframes reaching{
 	0%{transform: scale(0);}
-	100%{transform: scale(1.5);}
-
+	
+    
+    100%{transform: scale(1.3);}
 }
 
 @keyframes rotating{
-	0%{transform: translate(-35%, -65%) rotate(45deg);}
-	100%{transform: translate(800px, 90px) rotate(240deg);}
+	0%{transform: translate(-60%, -35%) rotate(45deg);}
+	100%{transform: translate(800px, 90px) rotate(360deg);}
 }
 
 @keyframes flying{
