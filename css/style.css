@@ -41,7 +41,3 @@
 	100%{transform: translate(800px, 90px) rotate(360deg);}
 }
 
-@keyframes flying{
-	0%{transform: rotate(90deg) translate(380px, -100px);}
-	100%{transform: rotate(90deg) translate(380px, -100%);}
-}
